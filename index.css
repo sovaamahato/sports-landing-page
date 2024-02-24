@@ -1,8 +1,31 @@
 *{
     margin: 0;
-    background-color: beige;
+ 
+    
 }
-nav{
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+:root {
+    --primary-color: black;
+    --primary-bg-color: #d4cec7;
+    --secondary-color: #e3dbd2;
+    --secondary-bg-color: white;
+  
+    --font-primary: "Inter";
+    --font-secondary: "arial";
+  }
+  body{
+    background-color: var(--primary-bg-color);
+  }
+  .page-container {
+    max-width: 60rem;
+    margin: 10px auto;
+  }
+header{
   
     
     padding: 10px;
@@ -23,9 +46,107 @@ nav{
     }
 .contact-button {
     background-color: black;
-    color: white;
+    color: var(--secondary-bg-color);
     padding: 8px 15px;
     border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  /* nav section ends here ------ */
+  .welcome-section {
+   
+    display: grid;
+  grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .welcome-text {
+    
+
+    font-size: 3rem;
+    
+  }
+
+  .welcome-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  /* end of welcome section */
+  .feature-section {
+    align-items: stretch;
+    
+  align-items: center;
+  column-gap: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .feature-box {
+    padding: 24px;
+   background-color: var(--secondary-color);
+   width: calc(50% - 24px);
+    /* border-radius: 9px; */
+    border: none;
+    
+    
+   
+  }
+  .img-box{
+    height: 100%;
+    width: calc(50% - 24px); 
+
+  }
+  .feature-box>div{
+   
+    height: 300px;
+    width: 200px;
+    
+  }
+  
+
+  .feature-box img {
+    
+    padding: 10px;
+    max-width: 100px;
+    height: 100px;
+
+    
+    
+  }
+  /* featured section end */
+
+
+  .quality-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+  }
+  
+  .quality-card {
+   
+   padding: 10px;
+    width: calc(100% - 48px);
+    border-radius: 9px;
+    border: none;
+  }
+  .quality-card>h2 {
+    font-size: 17px;
+  }
+  .quality-card>p {
+    padding: 10px;
+  }
+
+
+  .contact-us {
+    background-color: whitesmoke;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 8px 15px;
+    border: black 1px;
     border-radius: 15px;
     cursor: pointer;
   }
