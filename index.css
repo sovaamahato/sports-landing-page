@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    background-color: beige;
+}
+nav{
+  
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.logo img {
+    margin-right: 7px; 
+    width: 20px; 
+}
+
+.logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+    }
+.contact-button {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
