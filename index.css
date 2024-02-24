@@ -92,31 +92,43 @@
     justify-content: space-between;
     padding: 20px;
   }
+  .card{
+    display: flex;
+    column-gap: 1rem;
+    
+
+  }
   
   .feature-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 24px;
+    flex-direction: column;
     background-color: var(--secondary-color);
     width: calc(50% - 24px);
-    height: auto;
+    /* height: auto; */
+    
   }
   
   .img-box {
-    height: 300px;
+    
     width: calc(50% - 24px);
   }
   
   .img-box img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
   }
   .feature-box p {
     font-size: 22px;
+    
   }
   
   .img1 {
     width: 200px;
     height: 200px;
-    position: relative;
+   
     top: 20px;
     left: 120px;
   }
